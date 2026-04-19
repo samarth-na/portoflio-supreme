@@ -62,7 +62,7 @@
 }
 
 .wftdSubtitle {
-  font-family: var(--font-serif);
+  font-family: var(--font-primary);
   font-size: 12px;
   font-weight: 700;
   font-style: italic;
@@ -93,7 +93,7 @@
 }
 
 .bulletItem {
-  font-family: var(--font-serif);
+  font-family: var(--font-primary);
   font-size: 11px;
   line-height: 1.5;
   color: var(--ink);

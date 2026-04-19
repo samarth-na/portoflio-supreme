@@ -65,7 +65,7 @@
 }
 
 .quote {
-  font-family: var(--font-serif);
+  font-family: var(--font-primary);
   font-size: 16px;
   line-height: 1.4;
   font-style: italic;
@@ -73,7 +73,7 @@
 }
 
 .attribution {
-  font-family: var(--font-serif);
+  font-family: var(--font-primary);
   font-size: 10px;
   color: var(--ink);
   margin-top: 4px;
@@ -136,7 +136,7 @@
 }
 
 .bodyText {
-  font-family: var(--font-serif);
+  font-family: var(--font-primary);
   font-size: 11px;
   line-height: 1.55;
   color: var(--ink);
