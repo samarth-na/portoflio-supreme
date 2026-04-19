@@ -1,0 +1,46 @@
+.navStrip {
+  display: flex;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  margin-top: 0;
+}
+
+.navItem {
+  flex: 1;
+  padding: 6px 10px;
+  border-right: 1px solid var(--ink);
+  transition: background-color 0.2s ease;
+}
+
+.navItem:last-child {
+  border-right: none;
+}
+
+.navItem:hover {
+  background-color: var(--accent-subtle);
+}
+
+.pageNumber {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 4px;
+}
+
+.sectionTitle {
+  font-family: var(--font-primary);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+}
+
+.description {
+  font-family: var(--font-serif);
+  font-size: 11px;
+  color: var(--ink-light);
+  line-height: 1.4;
+  margin-top: 2px;
+}
