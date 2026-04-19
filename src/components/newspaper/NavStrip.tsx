@@ -1,5 +1,3 @@
-import styles from "./NavStrip.module.css";
-
 interface NavItemData {
   pageNumber: string;
   sectionTitle: string;
@@ -36,12 +34,21 @@ const navItems: NavItemData[] = [
 
 export function NavStrip() {
   return (
-    <nav className={styles.navStrip}>
+    <nav className="flex border-y border-ink">
       {navItems.map((item) => (
-        <div key={item.pageNumber} className={styles.navItem}>
-          <span className={styles.pageNumber}>{item.pageNumber}</span>
-          <span className={styles.sectionTitle}>{item.sectionTitle}</span>
-          <p className={styles.description}>{item.description}</p>
+        <div
+          key={item.pageNumber}
+          className="flex-1 border-r border-ink px-2.5 py-1.5 transition-colors duration-200 ease-out hover:bg-accent-subtle last:border-r-0"
+        >
+          <span className="mr-1 font-sans text-[14px] font-bold text-accent">
+            {item.pageNumber}
+          </span>
+          <span className="font-sans text-[11px] font-bold uppercase tracking-[0.5px] text-accent">
+            {item.sectionTitle}
+          </span>
+          <p className="mt-0.5 font-serif text-[11px] leading-[1.4] text-ink-light">
+            {item.description}
+          </p>
         </div>
       ))}
     </nav>

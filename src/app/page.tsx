@@ -1,11 +1,11 @@
 "use client";
 
+import { useEffect } from "react";
 import { LeftColumn } from "@/components/newspaper/LeftColumn";
 import { MainGrid } from "@/components/newspaper/MainGrid";
 import { NavStrip } from "@/components/newspaper/NavStrip";
 import { PostalHeader } from "@/components/newspaper/PostalHeader";
 import { RightColumn } from "@/components/newspaper/RightColumn";
-import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -16,13 +16,18 @@ export default function Home() {
       document.documentElement.style.zoom = String(newZoom);
     };
 
-    updateZoom();
+    // Delay initial zoom to allow page to render first, then animate
+    const timeoutId = setTimeout(updateZoom, 50);
+
     window.addEventListener("resize", updateZoom);
-    return () => window.removeEventListener("resize", updateZoom);
+    return () => {
+      clearTimeout(timeoutId);
+      window.removeEventListener("resize", updateZoom);
+    };
   }, []);
 
   return (
-    <div className="pageWrapper">
+    <div className="pageWrapper mt-5">
       <PostalHeader />
       <NavStrip />
       <MainGrid leftColumn={<LeftColumn />} rightColumn={<RightColumn />} />

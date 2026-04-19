@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import styles from "./MainGrid.module.css";
 
 interface MainGridProps {
   leftColumn: ReactNode;
@@ -8,9 +7,9 @@ interface MainGridProps {
 
 export function MainGrid({ leftColumn, rightColumn }: MainGridProps) {
   return (
-    <div className={styles.mainGrid}>
-      <div className={styles.leftColumn}>{leftColumn}</div>
-      <div className={styles.rightColumn}>{rightColumn}</div>
+    <div className="grid grid-cols-[1fr_0.6fr] gap-0">
+      <div className="border-r border-ink p-0">{leftColumn}</div>
+      <div className="p-0">{rightColumn}</div>
     </div>
   );
 }

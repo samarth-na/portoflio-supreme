@@ -1,35 +1,37 @@
-import styles from "./LeftColumn.module.css";
-
 export function LeftColumn() {
   return (
-    <div className={styles.leftColumn}>
-      {/* Sub-section A: Pull Quote Block */}
-      <div className={styles.pullQuoteBlock}>
-        <div className={styles.paintbrushContainer}>
-          <div className={styles.paintbrushPlaceholder}>paintbrush.jpg</div>
+    <div className="flex flex-col">
+      <div className="relative m-[7px] flex border-b border-ink p-[7px] animate-fade-in-up">
+        <div className="mr-[7px] shrink-0">
+          <div className="newspaper-placeholder-frame newspaper-hover-lift h-auto w-[clamp(40px,15vw,60px)] aspect-[60/80] text-[9px]">
+            paintbrush.jpg
+          </div>
         </div>
-        <div className={styles.quoteContent}>
-          <blockquote className={styles.quote}>
+        <div className="flex flex-1 flex-col justify-center">
+          <blockquote className="font-sans text-[16px] leading-[1.4] italic text-ink">
             "De regels zijn in steen gebeiteld, maar we kunnen ze afbreken. Een
             potlood is harder dan graniet."
           </blockquote>
-          <div className={styles.attribution}>
+          <div className="mt-1 font-sans text-[10px] leading-[1.4] text-ink">
             <p>– Sam Scarpulla,</p>
             <p>
               kunstenaar die meewerkt aan onze 'Herteken de regels'-campagne
             </p>
           </div>
         </div>
-        <div className={styles.circleImageContainer}>
-          <div className={styles.circlePlaceholder}>circle.jpg</div>
+        <div className="absolute right-[7px] top-[7px]">
+          <div className="newspaper-placeholder-frame newspaper-hover-lift h-[clamp(35px,12vw,55px)] w-[clamp(35px,12vw,55px)] overflow-hidden rounded-full text-[8px]">
+            circle.jpg
+          </div>
         </div>
       </div>
 
-      {/* Sub-section B: Article Block */}
-      <article className={styles.articleBlock}>
-        <h2 className={styles.headline}>samarth nagar</h2>
-        <div className={styles.bodyText}>
-          <p>
+      <article className="m-[6px_7px] p-[6px_7px] animate-fade-in-up [animation-delay:0.1s]">
+        <h2 className="mb-[6px] font-sans text-[11px] font-bold uppercase tracking-[2px] text-ink">
+          samarth nagar
+        </h2>
+        <div className="font-sans text-[11px] leading-[1.55] text-ink">
+          <p className="mb-[6px]">
             I’m a full-stack developer who focuses on building systems that are
             not just functional, but efficient, scalable, and genuinely useful.
             My work sits at the intersection of modern web development and
@@ -44,21 +46,24 @@ export function LeftColumn() {
             a way that feels clean and intentional. This mindset carries through
             everything I build, from small tools to larger applications.
           </p>
-          <p>
-            <span className={styles.link}>https://github.com/samarth-na</span>
+          <p className="mb-[6px]">
+            <span className="text-accent underline underline-offset-[2px] transition-colors duration-200 hover:text-accent-hover">
+              https://github.com/samarth-na
+            </span>
           </p>
         </div>
-        <div className={styles.landscapeImageContainer}>
-          <div className={styles.landscapePlaceholder}>
+        <div className="mt-[6px] w-full">
+          <div className="newspaper-placeholder-frame newspaper-hover-lift h-[180px] w-full text-[10px]">
             landscape-running.jpg
           </div>
         </div>
       </article>
 
-      {/* Sub-section C: Cijfer Block */}
-      <article className={styles.cijferBlock}>
-        <h2 className={styles.headline}>now and future</h2>
-        <div className={styles.bodyText}>
+      <article className="m-[6px_7px] border-t border-ink p-[6px_7px] animate-fade-in-up [animation-delay:0.2s]">
+        <h2 className="mb-[6px] font-sans text-[11px] font-bold uppercase tracking-[2px] text-ink">
+          now and future
+        </h2>
+        <div className="font-sans text-[11px] leading-[1.55] text-ink">
           <p>
             Right now, I’m focused on building and refining developer-centric
             tools and AI-assisted workflows. A big part of my work involves
@@ -72,7 +77,7 @@ export function LeftColumn() {
             design. For me, a good interface is one that makes powerful
             functionality feel simple, not overwhelming. This balance between
             capability and usability is something I continuously try to improve.{" "}
-            <span className={styles.link}>
+            <span className="text-accent underline underline-offset-[2px] transition-colors duration-200 hover:text-accent-hover">
               www.oxfamwereldwinkels.be/shoutout
             </span>{" "}
             vind je alle portretten.
