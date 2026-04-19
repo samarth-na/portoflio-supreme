@@ -1,28 +1,22 @@
+import Image from "next/image";
 export function LeftColumn() {
   return (
     <div className="flex flex-col">
       <div className="relative m-[7px] flex border-b border-ink p-[7px] animate-fade-in-up">
-        <div className="mr-[7px] shrink-0">
-          <div className="newspaper-placeholder-frame newspaper-hover-lift h-auto w-[clamp(40px,15vw,60px)] aspect-[60/80] text-[9px]">
-            paintbrush.jpg
-          </div>
-        </div>
         <div className="flex flex-1 flex-col justify-center">
-          <blockquote className="font-sans text-[16px] leading-[1.4] italic text-ink">
+          <blockquote className="font-sans  italic text-ink text-fill-current">
             "De regels zijn in steen gebeiteld, maar we kunnen ze afbreken. Een
             potlood is harder dan graniet."
           </blockquote>
-          <div className="mt-1 font-sans text-[10px] leading-[1.4] text-ink">
-            <p>– Sam Scarpulla,</p>
-            <p>
-              kunstenaar die meewerkt aan onze 'Herteken de regels'-campagne
-            </p>
-          </div>
         </div>
-        <div className="absolute right-[7px] top-[7px]">
-          <div className="newspaper-placeholder-frame newspaper-hover-lift h-[clamp(35px,12vw,55px)] w-[clamp(35px,12vw,55px)] overflow-hidden rounded-full text-[8px]">
-            circle.jpg
-          </div>
+        <div className=" ">
+          <Image
+            src="/images/Dune-Timothee-Solo-Lede.jpg"
+            alt="circle"
+            width={70}
+            height={70}
+            className="newspaper-placeholder-frame newspaper-hover-lift overflow-hidden rounded-full text-[8px]"
+          />
         </div>
       </div>
 
