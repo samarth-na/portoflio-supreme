@@ -1,3 +1,4 @@
+export { ApproachSection } from "./ApproachSection";
 export { LeftColumn } from "./LeftColumn";
 export { MainGrid } from "./MainGrid";
 export { NavStrip } from "./NavStrip";

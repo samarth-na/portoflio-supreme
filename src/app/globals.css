@@ -6,16 +6,29 @@
 
 @theme {
   --color-paper: oklch(99% 0.005 220);
-  --color-ink: oklch(15% 0.03 250);
+  --color-dark: oklch(15% 0.03 250);
   --color-accent: oklch(50% 0.12 215);
-  --color-ink-light: oklch(35% 0.04 250);
-  --color-ink-muted: oklch(50% 0.04 250);
+  --color-light: oklch(35% 0.04 250);
+  --color-muted: oklch(50% 0.04 250);
   --color-rule-light: oklch(90% 0.01 220);
   --color-accent-hover: oklch(42% 0.12 215);
   --color-accent-subtle: oklch(96% 0.01 215);
   --color-accent-muted: oklch(50% 0.08 250);
   --color-cool-surface: oklch(98% 0.008 220);
   --color-cool-divider: oklch(88% 0.015 220);
+
+  /* Dark mode colors */
+  --color-paper-dark: oklch(21% 0.006 285.885);
+  --color-dark-dark: oklch(95% 0.01 250);
+  --color-accent-dark: oklch(65% 0.15 215);
+  --color-light-dark: oklch(75% 0.06 250);
+  --color-muted-dark: oklch(65% 0.05 250);
+  --color-rule-light-dark: oklch(30% 0.02 220);
+  --color-accent-hover-dark: oklch(70% 0.14 215);
+  --color-accent-subtle-dark: oklch(25% 0.03 215);
+  --color-accent-muted-dark: oklch(65% 0.1 250);
+  --color-cool-surface-dark: oklch(24% 0.015 220);
+  --color-cool-divider-dark: oklch(35% 0.025 220);
 
   --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif:
@@ -60,16 +73,28 @@ html {
     font-size: 14px;
   }
 
+  html.dark {
+    background: var(--color-paper-dark);
+  }
+
   body {
     overflow-x: hidden;
     overflow-y: auto;
     background: var(--color-paper);
-    color: var(--color-ink);
+    color: var(--color-dark);
     font-family: var(--font-sans);
     font-size: 14px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+  }
+
+  html.dark body {
+    background: var(--color-paper-dark);
+    color: var(--color-dark-dark);
   }
 }
 
@@ -94,7 +119,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-ink-muted);
+    color: var(--color-muted);
     transition:
       transform 0.3s ease-out,
       box-shadow 0.3s ease-out;
@@ -114,6 +139,21 @@ html {
     content: "•";
     position: absolute;
     left: 0;
-    color: var(--color-ink);
+    color: var(--color-dark);
+  }
+
+  /* Dark mode color overrides */
+  html.dark {
+    --color-paper: var(--color-paper-dark);
+    --color-dark: var(--color-dark-dark);
+    --color-accent: var(--color-accent-dark);
+    --color-light: var(--color-light-dark);
+    --color-muted: var(--color-muted-dark);
+    --color-rule-light: var(--color-rule-light-dark);
+    --color-accent-hover: var(--color-accent-hover-dark);
+    --color-accent-subtle: var(--color-accent-subtle-dark);
+    --color-accent-muted: var(--color-accent-muted-dark);
+    --color-cool-surface: var(--color-cool-surface-dark);
+    --color-cool-divider: var(--color-cool-divider-dark);
   }
 }

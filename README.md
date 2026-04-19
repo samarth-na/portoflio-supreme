@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WOW Nieuwsbrief
 
-## Getting Started
+A modern vintage newspaper-style newsletter for **WOW – Wij, Oxfam-Wereldwinkels** (maart/april/mei 2017).
 
-First, run the development server:
+Built with Next.js 16.2.4 + React 19, featuring a crisp editorial design with bold typography and a responsive zoom-based layout.
+
+![Aesthetic](https://img.shields.io/badge/style-modern%20vintage%20newspaper-c41e3a)
+![Next.js](https://img.shields.io/badge/Next.js-16.2.4-black)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+
+## Quick Start
+
+This project uses [Bun](https://bun.sh/) as the package manager:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Install dependencies
+bun install
+
+# Start development server
+bun run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the newsletter.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+|---------|-------------|
+| `bun run dev` | Start development server on localhost:3000 |
+| `bun run build` | Create production build |
+| `bun run start` | Start production server |
+| `bun run lint` | Run Biome linter |
+| `bun run format` | Format code with Biome |
+
+## Design System
+
+- **Aesthetic**: Modern vintage newspaper — crisp editorial layout with bold typography
+- **Colors**: Paper white (`#ffffff`), Ink black (`#0a0a0a`), Accent red (`#c41e3a`)
+- **Typography**: Space Grotesk (primary), Georgia (serif fallback)
+- **Layout**: Fixed 780px content width with dynamic zoom scaling
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout (Dutch language, metadata)
+│   ├── page.tsx            # Home page with zoom calculation
+│   └── globals.css         # Design tokens, CSS variables
+└── components/newspaper/   # UI components
+    ├── PostalHeader.tsx    # Masthead with branding
+    ├── NavStrip.tsx        # Navigation strip
+    ├── MainGrid.tsx        # 2-column layout grid
+    ├── LeftColumn.tsx      # Main article content
+    └── RightColumn.tsx     # Sidebar content
+```
+
+## Tech Stack
+
+- **Framework**: Next.js 16.2.4 (App Router)
+- **Runtime**: React 19 with Experimental React Compiler
+- **Styling**: Tailwind CSS v4 + CSS Modules (hybrid migration)
+- **Linting**: Biome 2.2.0
+- **Language**: TypeScript
+
+## Special Features
+
+- **Dynamic Zoom**: Automatically scales content based on viewport width for optimal 780px viewing
+- **Dutch Language**: Full Dutch language support (`lang="nl"`)
+- **Path Aliases**: `@/*` maps to `./src/*`
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [Tailwind CSS](https://tailwindcss.com)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ for Oxfam-Wereldwinkels

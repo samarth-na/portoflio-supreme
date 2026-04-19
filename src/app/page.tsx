@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { ApproachSection } from "@/components/newspaper/ApproachSection";
 import { LeftColumn } from "@/components/newspaper/LeftColumn";
 import { MainGrid } from "@/components/newspaper/MainGrid";
 import { NavStrip } from "@/components/newspaper/NavStrip";
@@ -11,7 +12,7 @@ export default function Home() {
   useEffect(() => {
     const updateZoom = () => {
       const vw = window.innerWidth;
-      const targetWidth = vw - 250;
+      const targetWidth = vw - 500;
       const newZoom = Math.max(1, targetWidth / 780);
       document.documentElement.style.zoom = String(newZoom);
     };
@@ -31,6 +32,7 @@ export default function Home() {
       <PostalHeader />
       <NavStrip />
       <MainGrid leftColumn={<LeftColumn />} rightColumn={<RightColumn />} />
+      <ApproachSection />
     </div>
   );
 }
