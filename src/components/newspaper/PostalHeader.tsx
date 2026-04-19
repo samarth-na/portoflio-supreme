@@ -15,10 +15,9 @@ export function PostalHeader() {
         <p>[postcode/gemeente]</p>
       </div>
 
-      {/* Center Block - WOW Logo */}
       <div className={styles.centerBlock}>
-        <h1 className={styles.logo}>WOW</h1>
-        <p className={styles.subtitle}>WIJ, OXFAM-WERELDWINKELS</p>
+        <h1 className={styles.logo}>hello </h1>
+        <p className={styles.subtitle}>Software Architect</p>
       </div>
 
       {/* Right Block - Issue Info */}

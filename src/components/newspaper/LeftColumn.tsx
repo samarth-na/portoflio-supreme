@@ -27,22 +27,25 @@ export function LeftColumn() {
 
       {/* Sub-section B: Article Block */}
       <article className={styles.articleBlock}>
-        <h2 className={styles.headline}>BOEKJE OPEN OVER HET SCHETSBOEKJE</h2>
+        <h2 className={styles.headline}>samarth nagar</h2>
         <div className={styles.bodyText}>
           <p>
-            Hoe zou jij de handelsregels hertekenen? Inspireer ons in het
-            schetsboekje gemaakt van oude Oxfam-affiches! Met dank aan RE-DO,
-            twee Antwerpse dames die papierafval een nieuw leven geven. De
-            elastiekjes rond de boekjes zijn overschotjes van fabrikant Elesta
-            en ook het potlood is van gerecycleerd papier. De cover werd
-            gezeefdrukt met de schets die kunstenaar Sam Scarpulla maakte voor
-            onze campagne 'Herteken de regels'. Elk boekje is dus helemaal
-            gerecycleerd en zal dankzij jullie input nog unieker worden!
+            I’m a full-stack developer who focuses on building systems that are
+            not just functional, but efficient, scalable, and genuinely useful.
+            My work sits at the intersection of modern web development and
+            emerging AI workflows, where I spend a lot of time experimenting
+            with agent-based systems, developer tooling, and performance
+            optimization. I’m particularly interested in how complex processes
+            can be simplified into intuitive interfaces without losing depth or
+            control. What drives me is a strong preference for clarity and
+            efficiency. I don’t like unnecessary complexity—whether it’s in
+            code, UI, or system design. Instead, I try to break problems down,
+            understand how they work at a deeper level, and then rebuild them in
+            a way that feels clean and intentional. This mindset carries through
+            everything I build, from small tools to larger applications.
           </p>
           <p>
-            <span className={styles.link}>
-              extranet.oxfamwereldwinkels.be/weekvandevrijwilliger
-            </span>
+            <span className={styles.link}>https://github.com/samarth-na</span>
           </p>
         </div>
         <div className={styles.landscapeImageContainer}>
@@ -54,18 +57,21 @@ export function LeftColumn() {
 
       {/* Sub-section C: Cijfer Block */}
       <article className={styles.cijferBlock}>
-        <h2 className={styles.headline}>HET CIJFER: 427</h2>
+        <h2 className={styles.headline}>now and future</h2>
         <div className={styles.bodyText}>
           <p>
-            Met de actie 'A shout-out for fair trade' (van 12 tot 16 december
-            2016) wilde Oxfam-Wereldwinkels fair trade hoorbaar maken in heel
-            Vlaanderen. En dat is meer dan gelukt! Op 5 dagen tijd schreeuwden
-            voorbijgangers in 5 stations hun verontwaardiging over oneerlijke
-            handelsregels uit. Haalde hun keel 100 decibel, dan activeerden ze
-            een camera en werd hun schreeuw vastgelegd op de gevoelige plaat.
-            Resultaat: een mooie reeks zwart-witportretten van 427 mensen die
-            hun keel open zetten voor eerlijke handel. Een duidelijke boodschap
-            waarvoor beleidsmakers niet doof kunnen blijven. Op{" "}
+            Right now, I’m focused on building and refining developer-centric
+            tools and AI-assisted workflows. A big part of my work involves
+            understanding how systems behave under real constraints—like token
+            limits, performance bottlenecks, and usability challenges—and then
+            optimizing them in practical ways. Rather than just using tools as
+            they are, I’m more interested in improving them, extending them, or
+            sometimes rethinking how they should work entirely. I also spend a
+            significant amount of time working on frontend systems using modern
+            frameworks, where I care deeply about UI clarity and interaction
+            design. For me, a good interface is one that makes powerful
+            functionality feel simple, not overwhelming. This balance between
+            capability and usability is something I continuously try to improve.{" "}
             <span className={styles.link}>
               www.oxfamwereldwinkels.be/shoutout
             </span>{" "}
