@@ -1,3 +1,4 @@
+export { AccordionItem } from "./AccordionItem";
 export { ApproachSection } from "./ApproachSection";
 export { LeftColumn } from "./LeftColumn";
 export { MainGrid } from "./MainGrid";

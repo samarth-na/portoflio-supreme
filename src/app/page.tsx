@@ -12,6 +12,13 @@ export default function Home() {
   useEffect(() => {
     const updateZoom = () => {
       const vw = window.innerWidth;
+
+      // Only apply zoom on desktop (1024px+)
+      if (vw < 1024) {
+        document.documentElement.style.zoom = "1";
+        return;
+      }
+
       const targetWidth = vw - 500;
       const newZoom = Math.max(1, targetWidth / 780);
       document.documentElement.style.zoom = String(newZoom);
@@ -28,7 +35,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="pageWrapper mt-16">
+    <div className="pageWrapper mt-8">
       <PostalHeader />
       <NavStrip />
       <MainGrid leftColumn={<LeftColumn />} rightColumn={<RightColumn />} />

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Cormorant+Garamond:wght@600&family=JetBrains+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Cormorant+Garamond:wght@500&family=JetBrains+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
@@ -7,12 +7,14 @@
 
 @theme {
   --color-paper: oklch(0.9466 0.0121 67.68);
+  /* --color-paper: oklch(100% 0 1); */
   --color-dark: oklch(15% 0.03 250);
-  --color-accent: oklch(50% 0.12 215);
-  --color-red: oklch(55% 0.18 25);
-  --color-red-hover: oklch(48% 0.18 25);
-  --color-red-subtle: oklch(96% 0.02 25);
-  --color-red-muted: oklch(65% 0.12 25);
+  /* --color-accent: oklch(50% 0.12 215); */
+  --color-accent: oklch(0.55 0.12 180);
+  --color-yellow: oklch(76.9% 0.188 70.08);
+  --color-yellow-hover: oklch(48% 0.18 70.08);
+  --color-yellow-subtle: oklch(96% 0.02 70.08);
+  --color-yellow-muted: oklch(65% 0.12 70.08);
   --color-light: oklch(35% 0.04 250);
   --color-muted: oklch(50% 0.04 250);
   --color-rule-light: oklch(90% 0.01 220);
@@ -34,17 +36,17 @@
   --color-accent-muted-dark: oklch(65% 0.1 250);
   --color-cool-surface-dark: oklch(24% 0.015 220);
   --color-cool-divider-dark: oklch(35% 0.025 220);
-  --color-red-dark: oklch(65% 0.2 25);
-  --color-red-hover-dark: oklch(72% 0.18 25);
-  --color-red-subtle-dark: oklch(28% 0.04 25);
-  --color-red-muted-dark: oklch(58% 0.14 25);
+  --color-yellow-dark: oklch(65% 0.2 70.08);
+  --color-yellow-hover-dark: oklch(72% 0.18 70.08);
+  --color-yellow-subtle-dark: oklch(28% 0.04 70.08);
+  --color-yellow-muted-dark: oklch(58% 0.14 70.08);
 
   --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif:
     "Cormorant Garamond", "Georgia", "Times New Roman", Times, serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
   --font-heading:
-    "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+    "Cormorant Garamond", "Georgia", "Times New Roman", Times, serif;
 
   --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
 
@@ -63,10 +65,58 @@
 
 :root {
   --page-width: 780px;
+
+  /* Mobile-first responsive type scale */
+  --text-xs: clamp(12px, 3.5vw, 14px);
+  --text-sm: clamp(14px, 4vw, 16px);
+  --text-base: clamp(16px, 4.5vw, 18px);
+  --text-lg: clamp(18px, 5vw, 20px);
+  --text-xl: clamp(20px, 6vw, 24px);
+  --text-2xl: clamp(24px, 7vw, 32px);
+  --text-3xl: clamp(28px, 8vw, 40px);
+  --text-4xl: clamp(32px, 9vw, 48px);
 }
 
 html {
   transition: zoom 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Disable zoom on mobile/tablet - force normal scale */
+@media (max-width: 1023px) {
+  html {
+    zoom: 1 !important;
+  }
+}
+
+/* Mobile typography and touch optimizations */
+@media (max-width: 767px) {
+  html {
+    font-size: 16px; /* Prevent iOS auto-zoom */
+  }
+
+  /* Touch target minimums */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Accordion styles for mobile */
+  .accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+  }
+
+  .accordion-content.open {
+    grid-template-rows: 1fr;
+  }
+
+  .accordion-inner {
+    overflow: hidden;
+  }
 }
 
 @layer base {
@@ -166,9 +216,9 @@ html {
     --color-accent-muted: var(--color-accent-muted-dark);
     --color-cool-surface: var(--color-cool-surface-dark);
     --color-cool-divider: var(--color-cool-divider-dark);
-    --color-red: var(--color-red-dark);
-    --color-red-hover: var(--color-red-hover-dark);
-    --color-red-subtle: var(--color-red-subtle-dark);
-    --color-red-muted: var(--color-red-muted-dark);
+    --color-yellow: var(--color-yellow-dark);
+    --color-yellow-hover: var(--color-yellow-hover-dark);
+    --color-yellow-subtle: var(--color-yellow-subtle-dark);
+    --color-yellow-muted: var(--color-yellow-muted-dark);
   }
 }
