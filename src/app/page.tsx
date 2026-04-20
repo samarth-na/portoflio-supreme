@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="pageWrapper mt-10">
+    <div className="pageWrapper mt-16">
       <PostalHeader />
       <NavStrip />
       <MainGrid leftColumn={<LeftColumn />} rightColumn={<RightColumn />} />

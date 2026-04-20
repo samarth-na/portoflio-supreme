@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Cormorant+Garamond:wght@400&family=JetBrains+Mono:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Cormorant+Garamond:wght@600&family=JetBrains+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @source "../app/**/*.{ts,tsx}";
 @source "../components/**/*.{ts,tsx}";
 
 @theme {
-  --color-paper: oklch(99% 0.005 220);
+  --color-paper: oklch(0.9466 0.0121 67.68);
   --color-dark: oklch(15% 0.03 250);
   --color-accent: oklch(50% 0.12 215);
+  --color-red: oklch(55% 0.18 25);
+  --color-red-hover: oklch(48% 0.18 25);
+  --color-red-subtle: oklch(96% 0.02 25);
+  --color-red-muted: oklch(65% 0.12 25);
   --color-light: oklch(35% 0.04 250);
   --color-muted: oklch(50% 0.04 250);
   --color-rule-light: oklch(90% 0.01 220);
@@ -15,7 +20,7 @@
   --color-accent-subtle: oklch(96% 0.01 215);
   --color-accent-muted: oklch(50% 0.08 250);
   --color-cool-surface: oklch(98% 0.008 220);
-  --color-cool-divider: oklch(88% 0.015 220);
+  --color-cool-divider: oklch(0.4459 0 0);
 
   /* Dark mode colors */
   --color-paper-dark: oklch(21% 0.006 285.885);
@@ -29,11 +34,17 @@
   --color-accent-muted-dark: oklch(65% 0.1 250);
   --color-cool-surface-dark: oklch(24% 0.015 220);
   --color-cool-divider-dark: oklch(35% 0.025 220);
+  --color-red-dark: oklch(65% 0.2 25);
+  --color-red-hover-dark: oklch(72% 0.18 25);
+  --color-red-subtle-dark: oklch(28% 0.04 25);
+  --color-red-muted-dark: oklch(58% 0.14 25);
 
   --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif:
     "Cormorant Garamond", "Georgia", "Times New Roman", Times, serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --font-heading:
+    "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
 
   --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
 
@@ -115,7 +126,7 @@ html {
       var(--color-rule-light) 4px,
       var(--color-rule-light) 5px
     );
-    border: 1px solid var(--color-rule-light);
+    border: 0.5px solid var(--color-rule-light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,5 +166,9 @@ html {
     --color-accent-muted: var(--color-accent-muted-dark);
     --color-cool-surface: var(--color-cool-surface-dark);
     --color-cool-divider: var(--color-cool-divider-dark);
+    --color-red: var(--color-red-dark);
+    --color-red-hover: var(--color-red-hover-dark);
+    --color-red-subtle: var(--color-red-subtle-dark);
+    --color-red-muted: var(--color-red-muted-dark);
   }
 }

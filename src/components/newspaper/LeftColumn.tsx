@@ -2,7 +2,7 @@ import Image from "next/image";
 export function LeftColumn() {
   return (
     <div className="flex flex-col">
-      <div className="relative m-[7px] flex border-b border-cool-divider p-[7px] animate-fade-in-up">
+      <div className="relative m-[7px] flex border-b-[0.5px] border-cool-divider p-[7px] animate-fade-in-up">
         <div className="flex flex-1 flex-col justify-center">
           <blockquote className="font-sans  italic text-dark text-fill-current">
             "De regels zijn in steen gebeiteld, maar we kunnen ze afbreken. Een
@@ -21,7 +21,7 @@ export function LeftColumn() {
       </div>
 
       <article className="m-[6px_7px] p-[6px_7px] animate-fade-in-up [animation-delay:0.1s]">
-        <h2 className="mb-[6px] font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+        <h2 className="mb-[6px] font-heading text-[11px] font-bold uppercase tracking-[2px] text-accent">
           samarth nagar
         </h2>
         <div className="font-sans text-[11px] leading-[1.55] text-dark">
@@ -41,7 +41,7 @@ export function LeftColumn() {
             everything I build, from small tools to larger applications.
           </p>
           <p className="mb-[6px]">
-            <span className="text-accent underline underline-offset-[2px] transition-colors duration-200 hover:text-accent-hover">
+            <span className="font-mono text-accent underline underline-offset-[2px] transition-colors duration-200 hover:text-accent-hover">
               https://github.com/samarth-na
             </span>
           </p>
@@ -53,7 +53,7 @@ export function LeftColumn() {
         </div>
       </article>
 
-      <article className="m-[6px_7px] border-t border-cool-divider p-[6px_7px] animate-fade-in-up [animation-delay:0.2s]">
+      <article className="m-[6px_7px] border-t-[0.5px] border-cool-divider p-[6px_7px] animate-fade-in-up [animation-delay:0.2s]">
         <h2 className="mb-[6px] font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
           now and future
         </h2>

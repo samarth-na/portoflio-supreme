@@ -1,18 +1,18 @@
 export function RightColumn() {
   return (
     <div className="flex flex-col">
-      <div className="h-[60px] w-full border-b border-cool-divider" />
+      <div className="h-[60px] w-full border-b-[0.5px] border-cool-divider" />
 
       <article className="m-[5px_6px] mt-[6px] p-[5px_6px] animate-fade-in-up [animation-delay:0.1s]">
         <div className="mb-[6px]">
-          <h2 className="font-sans text-[12px] font-bold uppercase tracking-[1px] text-accent">
+          <h2 className="font-heading text-[12px] font-bold uppercase tracking-[1px] text-accent">
             WORLD FAIR TRADE DAY
           </h2>
-          <h3 className="mt-[2px] font-sans text-[14px] font-bold uppercase tracking-[1px] text-dark">
+          <h3 className="mt-[2px] font-heading text-[14px] font-bold uppercase tracking-[1px] text-dark">
             13 MEI 2017
           </h3>
         </div>
-        <hr className="my-1 border-0 border-t border-cool-divider" />
+        <hr className="my-1 border-0 border-t-[0.5px] border-cool-divider" />
         <p className="mb-[6px] font-sans text-[12px] font-bold italic text-dark">
           Fietsen voor eerlijke en betere handelsregels!
         </p>

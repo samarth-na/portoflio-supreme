@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme";
 
 export const metadata: Metadata = {
   title: "WOW – Wij, Oxfam-Wereldwinkels",
-  description: "Nieuwsbrief maart/april/mei 2017",
+  description: "Nieuwsbrief /april/mei 2017",
 };
 
 export const viewport: Viewport = {

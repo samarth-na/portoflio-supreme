@@ -7,7 +7,7 @@ export function ApproachSection() {
 
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-4 animate-fade-in-up">
-          <div className="border-r border-cool-divider pr-4">
+          <div className="border-r-[0.5px] border-cool-divider pr-4">
             <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
               🧠 Philosophy
             </h3>
@@ -20,7 +20,7 @@ export function ApproachSection() {
         </div>
 
         <div className="col-span-4 animate-fade-in-up [animation-delay:0.1s]">
-          <div className="border-r border-cool-divider px-4">
+          <div className="border-r-[0.5px] border-cool-divider px-4">
             <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
               💡 What Makes It Different
             </h3>
@@ -69,13 +69,13 @@ export function ApproachSection() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-cool-divider pt-6">
+      <div className="mt-8 border-t-[0.5px] border-cool-divider pt-6">
         <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
           🛠 Skills & Stack
         </h3>
         <div className="grid grid-cols-12 gap-3">
           <div className="col-span-3 animate-fade-in-up [animation-delay:0.5s]">
-            <div className="border border-cool-divider p-3">
+            <div className="border-[0.5px] border-cool-divider p-3">
               <span className="font-mono text-[9px] text-muted">
                 💻 Core Stack
               </span>
@@ -89,7 +89,7 @@ export function ApproachSection() {
           </div>
 
           <div className="col-span-3 animate-fade-in-up [animation-delay:0.6s]">
-            <div className="border border-cool-divider p-3">
+            <div className="border-[0.5px] border-cool-divider p-3">
               <span className="font-mono text-[9px] text-muted">
                 ⚡ Specialized
               </span>
@@ -103,7 +103,7 @@ export function ApproachSection() {
           </div>
 
           <div className="col-span-3 animate-fade-in-up [animation-delay:0.7s]">
-            <div className="border border-cool-divider p-3">
+            <div className="border-[0.5px] border-cool-divider p-3">
               <span className="font-mono text-[9px] text-muted">
                 🧠 Working Knowledge
               </span>
@@ -117,7 +117,7 @@ export function ApproachSection() {
           </div>
 
           <div className="col-span-3 animate-fade-in-up [animation-delay:0.8s]">
-            <div className="border border-cool-divider p-3">
+            <div className="border-[0.5px] border-cool-divider p-3">
               <span className="font-mono text-[9px] text-muted">
                 🚫 What I Don&apos;t Do
               </span>
@@ -133,7 +133,7 @@ export function ApproachSection() {
 
         <div className="mt-6 grid grid-cols-12 gap-3">
           <div className="col-span-6 animate-fade-in-up [animation-delay:0.85s]">
-            <div className="border border-cool-divider p-3">
+            <div className="border-[0.5px] border-cool-divider p-3">
               <span className="font-mono text-[9px] text-muted">
                 🌐 Web Skills
               </span>
@@ -148,7 +148,7 @@ export function ApproachSection() {
           </div>
 
           <div className="col-span-6 animate-fade-in-up [animation-delay:0.9s]">
-            <div className="border border-cool-divider p-3">
+            <div className="border-[0.5px] border-cool-divider p-3">
               <span className="font-mono text-[9px] text-muted">
                 ☁️ Cloud & Infrastructure
               </span>
@@ -164,7 +164,7 @@ export function ApproachSection() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-cool-divider pt-6">
+      <div className="mt-8 border-t-[0.5px] border-cool-divider pt-6">
         <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
           🚀 Featured Projects
         </h3>
@@ -216,7 +216,7 @@ export function ApproachSection() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-cool-divider pt-6">
+      <div className="mt-8 border-t-[0.5px] border-cool-divider pt-6">
         <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
           📈 Experience & Timeline
         </h3>
