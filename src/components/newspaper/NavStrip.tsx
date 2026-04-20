@@ -38,7 +38,7 @@ export function NavStrip() {
       {navItems.map((item) => (
         <div
           key={item.pageNumber}
-          className="flex-shrink-0 flex-1 min-w-[140px] md:min-w-0 border-r-[0.5px] border-cool-divider px-3 py-2 md:px-2.5 md:py-1.5 touch-target transition-colors duration-200 ease-out hover:bg-accent-subtle last:border-r-0 flex-row items-center"
+          className="flex-shrink-0 flex-1 min-w-[140px] md:min-w-0 border-r-[0.5px] border-cool-divider px-3 py-2 md:px-2.5 md:py-1.5 touch-target transition-colors duration-200 ease-out hover:bg-primary-subtle last:border-r-0 flex-row items-center"
         >
           <span className="mr-1 font-heading text-[14px] md:text-[14px] font-bold text-yellow">
             {item.pageNumber}
@@ -46,7 +46,7 @@ export function NavStrip() {
           <span className="font-heading text-sm md:text-[11px] font-bold uppercase tracking-[0.5px] text-yellow">
             {item.sectionTitle}
           </span>
-          <p className="mt-0.5 font-serif text-sm md:text-[11px] leading-[1.4] text-light">
+          <p className="mt-0.5 font-serif text-sm md:text-[11px] leading-[1.4]">
             {item.description}
           </p>
         </div>

@@ -9,8 +9,9 @@
   --color-paper: oklch(0.9466 0.0121 67.68);
   /* --color-paper: oklch(100% 0 1); */
   --color-dark: oklch(15% 0.03 250);
+  --color-foreground: oklch(15% 0.03 250);
   /* --color-accent: oklch(50% 0.12 215); */
-  --color-accent: oklch(0.55 0.12 180);
+  --color-primary: oklch(0.55 0.12 180);
   --color-yellow: oklch(76.9% 0.188 70.08);
   --color-yellow-hover: oklch(48% 0.18 70.08);
   --color-yellow-subtle: oklch(96% 0.02 70.08);
@@ -18,28 +19,34 @@
   --color-light: oklch(35% 0.04 250);
   --color-muted: oklch(50% 0.04 250);
   --color-rule-light: oklch(90% 0.01 220);
-  --color-accent-hover: oklch(42% 0.12 215);
-  --color-accent-subtle: oklch(96% 0.01 215);
-  --color-accent-muted: oklch(50% 0.08 250);
+  --color-primary-hover: oklch(42% 0.12 215);
+  --color-primary-subtle: oklch(96% 0.01 215);
+  --color-primary-muted: oklch(50% 0.08 250);
   --color-cool-surface: oklch(98% 0.008 220);
   --color-cool-divider: oklch(0.4459 0 0);
 
   /* Dark mode colors */
   --color-paper-dark: oklch(21% 0.006 285.885);
-  --color-dark-dark: oklch(95% 0.01 250);
-  --color-accent-dark: oklch(65% 0.15 215);
-  --color-light-dark: oklch(75% 0.06 250);
-  --color-muted-dark: oklch(65% 0.05 250);
-  --color-rule-light-dark: oklch(30% 0.02 220);
-  --color-accent-hover-dark: oklch(70% 0.14 215);
-  --color-accent-subtle-dark: oklch(25% 0.03 215);
-  --color-accent-muted-dark: oklch(65% 0.1 250);
+  --color-dark-dark: oklch(1 0 0);
+  --color-foreground-dark: oklch(0.88 0 0);
+  --color-primary-dark: oklch(0.65 0.13 180);
+  --color-light-dark: oklch(0.7845 0.1325 181.912);
+  --color-muted-dark: oklch(0.8452 0 0);
+  --color-rule-light-dark: oklch(0.4459 0 0);
+  --color-primary-hover-dark: oklch(70% 0.14 215);
+  --color-primary-subtle-dark: oklch(25% 0.03 215);
+  --color-primary-muted-dark: oklch(65% 0.1 250);
   --color-cool-surface-dark: oklch(24% 0.015 220);
   --color-cool-divider-dark: oklch(35% 0.025 220);
   --color-yellow-dark: oklch(65% 0.2 70.08);
   --color-yellow-hover-dark: oklch(72% 0.18 70.08);
   --color-yellow-subtle-dark: oklch(28% 0.04 70.08);
   --color-yellow-muted-dark: oklch(58% 0.14 70.08);
+
+  /* New dark mode colors from palette */
+  --color-card-dark: oklch(0.2455 0.0217 257.2823);
+  --color-card-foreground-dark: oklch(1 0 0);
+  --color-muted-foreground-dark: oklch(0.8452 0 0);
 
   --font-sans: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif:
@@ -142,7 +149,7 @@ html {
     overflow-x: hidden;
     overflow-y: auto;
     background: var(--color-paper);
-    color: var(--color-dark);
+    color: var(--color-foreground);
     font-family: var(--font-sans);
     font-size: 14px;
     line-height: 1.5;
@@ -155,7 +162,7 @@ html {
 
   html.dark body {
     background: var(--color-paper-dark);
-    color: var(--color-dark-dark);
+    color: var(--color-foreground);
   }
 }
 
@@ -200,25 +207,29 @@ html {
     content: "•";
     position: absolute;
     left: 0;
-    color: var(--color-dark);
+    color: var(--color-foreground);
   }
 
   /* Dark mode color overrides */
   html.dark {
     --color-paper: var(--color-paper-dark);
-    --color-dark: var(--color-dark-dark);
-    --color-accent: var(--color-accent-dark);
+    --color-dark: var(--color-foreground-dark);
+    --color-foreground: var(--color-foreground-dark);
+    --color-primary: var(--color-primary-dark);
     --color-light: var(--color-light-dark);
     --color-muted: var(--color-muted-dark);
+    --color-muted-foreground: var(--color-muted-foreground-dark);
     --color-rule-light: var(--color-rule-light-dark);
-    --color-accent-hover: var(--color-accent-hover-dark);
-    --color-accent-subtle: var(--color-accent-subtle-dark);
-    --color-accent-muted: var(--color-accent-muted-dark);
+    --color-primary-hover: var(--color-primary-hover-dark);
+    --color-primary-subtle: var(--color-primary-subtle-dark);
+    --color-primary-muted: var(--color-primary-muted-dark);
     --color-cool-surface: var(--color-cool-surface-dark);
     --color-cool-divider: var(--color-cool-divider-dark);
     --color-yellow: var(--color-yellow-dark);
     --color-yellow-hover: var(--color-yellow-hover-dark);
     --color-yellow-subtle: var(--color-yellow-subtle-dark);
     --color-yellow-muted: var(--color-yellow-muted-dark);
+    --color-card: var(--color-card-dark);
+    --color-card-foreground: var(--color-card-foreground-dark);
   }
 }

@@ -33,7 +33,7 @@ export function AccordionItem({
         className="w-full flex items-center justify-between py-3 touch-target"
         aria-expanded={isOpen}
       >
-        <h3 className="font-sans text-base font-bold uppercase tracking-[2px] text-accent text-left">
+        <h3 className="font-sans text-base font-bold uppercase tracking-[2px] text-primary text-left">
           {title}
         </h3>
         <span

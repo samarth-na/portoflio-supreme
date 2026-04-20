@@ -5,7 +5,7 @@ import { AccordionItem } from "./AccordionItem";
 export function ApproachSection() {
   return (
     <section className="mt-8 md:mt-12 border-t-2 border-dark pt-6 md:pt-8">
-      <h2 className="mb-6 md:mb-8 font-serif text-2xl md:text-4xl italic text-dark">
+      <h2 className="mb-6 md:mb-8 font-serif text-2xl md:text-4xl italic text-foreground">
         Approach & Mindset
       </h2>
 
@@ -16,10 +16,10 @@ export function ApproachSection() {
             defaultOpen={true}
             className="md:border-r-[0.5px] md:border-cool-divider md:pr-4"
           >
-            <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+            <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-primary">
               🧠 Philosophy
             </h3>
-            <p className="font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.6] text-dark">
+            <p className="font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.6] text-foreground">
               Understanding systems deeply rather than assembling solutions.
               Knowing why something works, its limitations, and how it can be
               improved.
@@ -32,10 +32,10 @@ export function ApproachSection() {
             title="💡 What Makes It Different"
             className="md:border-r-[0.5px] md:border-cool-divider md:px-4"
           >
-            <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+            <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-primary">
               💡 What Makes It Different
             </h3>
-            <p className="font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.6] text-dark">
+            <p className="font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.6] text-foreground">
               Strong focus on optimization and usability. Making things work
               well under real-world conditions—reducing costs, improving
               responsiveness.
@@ -45,10 +45,10 @@ export function ApproachSection() {
 
         <div className="md:col-span-4">
           <AccordionItem title="🔍 Project Philosophy">
-            <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+            <h3 className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[2px] text-primary">
               🔍 Project Philosophy
             </h3>
-            <p className="font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.6] text-dark">
+            <p className="font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.6] text-foreground">
               Quality over quantity. Each project driven by real problems or
               curiosity—exploring deeper aspects like system behavior and
               performance tradeoffs.
@@ -64,7 +64,7 @@ export function ApproachSection() {
               <span className="font-mono text-[10px] text-muted">
                 📈 Growth & Learning
               </span>
-              <p className="mt-2 font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.5] text-dark">
+              <p className="mt-2 font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.5] text-foreground">
                 Hands-on exploration—building things, breaking them, improving
                 them. Developing practical understanding of system design,
                 databases, and cloud infrastructure.
@@ -79,7 +79,7 @@ export function ApproachSection() {
               <span className="font-mono text-[10px] text-muted">
                 📬 Contact
               </span>
-              <p className="mt-2 font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.5] text-dark">
+              <p className="mt-2 font-sans text-sm md:text-[11px] leading-relaxed md:leading-[1.5] text-foreground">
                 Open to interesting problems involving tools, systems, or AI and
                 web development. Challenging projects welcome.
               </p>
@@ -89,7 +89,7 @@ export function ApproachSection() {
       </div>
 
       <div className="mt-6 md:mt-8 border-t-[0.5px] border-cool-divider pt-4 md:pt-6">
-        <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+        <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-primary">
           🛠 Skills & Stack
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-3">
@@ -99,7 +99,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   💻 Core Stack
                 </span>
-                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-dark">
+                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-foreground">
                   <li>Next.js, React</li>
                   <li>Tailwind CSS, shadcn/ui</li>
                   <li>Node.js, APIs</li>
@@ -115,7 +115,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   ⚡ Specialized
                 </span>
-                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-dark">
+                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-foreground">
                   <li>Agentic AI systems</li>
                   <li>Token optimization</li>
                   <li>UI/UX refinement</li>
@@ -131,7 +131,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   🧠 Working Knowledge
                 </span>
-                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-dark">
+                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-foreground">
                   <li>Azure, Cloudflare</li>
                   <li>Performance tuning</li>
                   <li>API design</li>
@@ -147,7 +147,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   🚫 What I Don&apos;t Do
                 </span>
-                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-dark">
+                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-foreground">
                   <li>Surface-level expertise</li>
                   <li>Depth over hype</li>
                   <li>Boilerplate work</li>
@@ -165,7 +165,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   🌐 Web Skills
                 </span>
-                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-dark">
+                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-foreground">
                   <li>Next.js & React ecosystem</li>
                   <li>TypeScript & modern JavaScript</li>
                   <li>Responsive design & CSS</li>
@@ -182,7 +182,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   ☁️ Cloud & Infrastructure
                 </span>
-                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-dark">
+                <ul className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.7] text-foreground">
                   <li>Azure & Cloudflare Workers</li>
                   <li>Serverless architectures</li>
                   <li>Database management (PostgreSQL, libSQL)</li>
@@ -196,7 +196,7 @@ export function ApproachSection() {
       </div>
 
       <div className="mt-6 md:mt-8 border-t-[0.5px] border-cool-divider pt-4 md:pt-6">
-        <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+        <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-primary">
           🚀 Featured Projects
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
@@ -206,7 +206,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   🧠 AI Coding Agent
                 </span>
-                <p className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-dark">
+                <p className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-foreground">
                   Developer interface for managing AI coding workflows with
                   token visibility and efficiency focus.
                 </p>
@@ -223,7 +223,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   📊 Token Analyzer
                 </span>
-                <p className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-dark">
+                <p className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-foreground">
                   Visual breakdown of input/output tokens, cached vs real usage.
                   60-70% token reduction achieved.
                 </p>
@@ -240,7 +240,7 @@ export function ApproachSection() {
                 <span className="font-mono text-[9px] text-muted">
                   🗂 Kanban App
                 </span>
-                <p className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-dark">
+                <p className="mt-2 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-foreground">
                   Modern task management with smooth UX, modular design, and
                   real-world usability focus.
                 </p>
@@ -254,20 +254,20 @@ export function ApproachSection() {
       </div>
 
       <div className="mt-6 md:mt-8 border-t-[0.5px] border-cool-divider pt-4 md:pt-6">
-        <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-accent">
+        <h3 className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[2px] text-primary">
           📈 Experience & Timeline
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
           <div className="md:col-span-6">
             <AccordionItem title="2025 – Present">
-              <div className="border-l-2 border-accent pl-4">
+              <div className="border-l-2 border-primary pl-4">
                 <span className="font-mono text-[9px] text-muted">
                   2025 – Present
                 </span>
-                <h4 className="mt-1 font-sans text-sm md:text-[11px] font-bold text-dark">
+                <h4 className="mt-1 font-sans text-sm md:text-[11px] font-bold text-foreground">
                   Independent Developer
                 </h4>
-                <p className="mt-1 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-dark">
+                <p className="mt-1 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-foreground">
                   Built multiple full-stack applications and developer tools.
                   Focused on AI-assisted workflows and system optimization.
                 </p>
@@ -277,12 +277,12 @@ export function ApproachSection() {
 
           <div className="md:col-span-6">
             <AccordionItem title="Ongoing">
-              <div className="border-l-2 border-accent pl-4">
+              <div className="border-l-2 border-primary pl-4">
                 <span className="font-mono text-[9px] text-muted">Ongoing</span>
-                <h4 className="mt-1 font-sans text-sm md:text-[11px] font-bold text-dark">
+                <h4 className="mt-1 font-sans text-sm md:text-[11px] font-bold text-foreground">
                   Continuous Learning
                 </h4>
-                <p className="mt-1 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-dark">
+                <p className="mt-1 font-sans text-xs md:text-[10px] leading-relaxed md:leading-[1.5] text-foreground">
                   Deep diving into system design, databases, cloud
                   infrastructure through hands-on experimentation.
                 </p>
@@ -295,7 +295,7 @@ export function ApproachSection() {
       <div className="mt-6 md:mt-8 border-t border-dark pt-4 md:pt-6">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
           <div className="md:col-span-4 md:col-start-5">
-            <blockquote className="text-center font-serif text-lg md:text-xl italic text-dark">
+            <blockquote className="text-center font-serif text-lg md:text-xl italic text-foreground">
               &ldquo;Focused on depth, not surface-level features.&rdquo;
             </blockquote>
           </div>

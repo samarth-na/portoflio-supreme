@@ -81,11 +81,11 @@ export function PostalHeader() {
       </div>
 
       <div className="order-3 shrink-0 text-right font-sans">
-        <div className="text-sm md:text-[11px] uppercase leading-[1.4] tracking-[1px] text-dark">
+        <div className="text-sm md:text-[11px] uppercase leading-[1.4] tracking-[1px] text-foreground">
           <button
             type="button"
             onClick={toggleTheme}
-            className="touch-target border-[0.5px] border-cool-divider bg-paper px-3 py-1 md:px-2 md:py-0.5 text-dark transition-colors duration-300"
+            className="touch-target border-[0.5px] border-cool-divider bg-paper px-3 py-1 md:px-2 md:py-0.5 text-foreground transition-colors duration-300"
           >
             THEME
           </button>
